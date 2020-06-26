@@ -1,6 +1,17 @@
 name: Running bot
 
-on: push
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
 env:
   SAVE: https://flat-rain-51b9.manofuranium.workers.dev/0:/Jamie's%20Random%20stuff/config.zip
 jobs:
